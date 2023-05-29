@@ -31,8 +31,8 @@ login_Url = 'https://sso.donga.ac.kr/svc/tk/Auth.eps?id=studentnew&ac=Y&ifa=N&Re
 calendar_Url = f"https://student.donga.ac.kr/SudExam/SUD/XSUN0120.aspx"
 ###############################################################################################
 try:
-    userid = '2024354'
-    passwd = 'Tusocl0710^~^'
+    userid = ##
+    passwd = ##
     year = 2023
     month = 4
     day = 7

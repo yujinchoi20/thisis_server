@@ -33,8 +33,8 @@ calendar_Url = f"https://student.donga.ac.kr/SudExam/SUD/XSUN0120.aspx"
 #######################################################################################################
 
 try:
-    userid = '2024354'
-    passwd = 'Tusocl0710^~^'
+    userid = ##
+    passwd = ##
 except Exception as e:
     json_Result['error'] = "-2"     
 else:

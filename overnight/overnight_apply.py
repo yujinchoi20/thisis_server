@@ -63,16 +63,7 @@ else:
         # ddlYear2 = int(form['ddlYear2'].value)
         # ddlMonth2 = int(form['ddlMonth2'].value)
         # ddlDay2 = int(form['ddlDay2'].value)
-        userid = '2024354'
-        passwd = 'Tusocl0710^~^'
-        ddl_place = '동아리방'
-        ddlYear1 = '2023'
-        ddlMonth1 = '4'
-        ddlDay1 = '7'
-        ddlYear2 = '2023'
-        ddlMonth2 = '4'
-        ddlDay2 = '8'
-
+        
     except Exception as e:
         json_Result['error'] = "-2" 
     else:

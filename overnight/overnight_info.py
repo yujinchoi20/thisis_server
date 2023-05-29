@@ -37,8 +37,8 @@ json_Result = list()
 #######################################################################################################
 
 try:
-    userid = '2024354'
-    passwd = 'Tusocl0710^~^'
+    userid = ##
+    passwd = ##
     
 except Exception as e:
     json_Result['error'] = "-2" 
