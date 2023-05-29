@@ -12,9 +12,8 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 import pymysql
-sys.path.insert(0,'/var/www/html/thisis_py/db')
+# db 주소 
 from db_proc import db
-
 
 sys.stdout = codecs.getwriter("utf-8") (sys.stdout.detach())
 cgitb.enable()
@@ -94,7 +93,7 @@ try:
 	response = requests.get(calendar_Url,timeout=(5,5), verify=False) # verify=False 추가 
 	response.encoding = None
 except requests.exceptions.Timeout:
-	error_Sql=f"UPDATE calendar_info SET date='-1', schedule='-1', time='-1', WHERE id='1'"
+	error_Sql= # update 테이블 명
 	cur.execute(error_Sql)
 	db.commit()
 	db.close()
@@ -139,18 +138,13 @@ else:
 						# print("schedule_List : ", td_All[1].text)
 						schedule_List.append(td_All[1].text)
 
-
-	# print(semester_List)
-	# print(date_List)
-	# print(schedule_List)
-
 	ERROR_DETECT(date_List)
 	sql = "DELETE FROM calendar_info"
 	cur.execute(sql)
 	db.commit()
 
 	for list_Content_Idx in range(len(date_List)):
-		sql = f"INSERT INTO calendar_info(semester, date, schedule, time) VALUES('{semester_List[list_Content_Idx]}','{date_List[list_Content_Idx]}','{schedule_List[list_Content_Idx]}',now())"
+		sql = # insert 테이블 명 
 		cur.execute(sql)
 		db.commit()
 db.close()
